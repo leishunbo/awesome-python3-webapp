@@ -16,8 +16,8 @@ from aiohttp import web
 
 def index(request):
     return web.Response(body=b'<h1>Awesome</h1>',
-    					content_type='text/html',
-    					charset='UTF-8')
+                        content_type='text/html',
+                        charset='UTF-8')
 
 async def init(loop):
     app = web.Application(loop=loop)
